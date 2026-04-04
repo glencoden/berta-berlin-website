@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("./fonts/BebasNeue-Regular.ttf");
+}
+
+@theme {
+    --font-sans: "BebasNeue", sans-serif;
+    --color-primary: #FF8C1A;
+    --color-primary-light: #FFB366;
+    --color-secondary: #FFC426;
+}
+
+@media only screen and (max-width: 900px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    font-size: 16px;
+    font-family: BebasNeue, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@keyframes is-loading {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade-out {
+    0% { opacity: 0.8; }
+    100% { opacity: 0; }
+}
+
+@keyframes slide-in {
+    0% { translate: -200% 0; }
+    100% { translate: 0 0; }
+}
+
+@keyframes sidebar-slide-in {
+    0% { transform: translateX(-80px); }
+    100% { transform: translateX(0); }
+}
