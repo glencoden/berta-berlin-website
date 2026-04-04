@@ -41,7 +41,7 @@ class EditorService {
     private _sortedRecent: Video[] = [];
 
     setPlaylists(playlists: Playlist[]): void {
-        this._playlists = playlists.filter(p => p.title.toLowerCase().includes(playlistFilterKey));
+        this._playlists = playlists.filter(p => p.description.includes(playlistFilterKey));
     }
 
     setVideos(videos: Video[]): void {

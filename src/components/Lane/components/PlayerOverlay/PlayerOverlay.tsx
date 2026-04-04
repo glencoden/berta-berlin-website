@@ -12,9 +12,10 @@ import type { Video } from '../../../../types/video';
 interface PlayerOverlayProps {
     activeItem: Video | null;
     visible: boolean;
+    zIndex?: number;
 }
 
-function PlayerOverlay({ activeItem, visible }: PlayerOverlayProps) {
+function PlayerOverlay({ activeItem, visible, zIndex }: PlayerOverlayProps) {
     const { state, dispatch: appDispatch } = useApplicationContext();
     const { state: playerState, dispatch: playerDispatch } = usePlayerContext();
     const parsedDescription = useParsedDescription(activeItem);
@@ -54,6 +55,7 @@ function PlayerOverlay({ activeItem, visible }: PlayerOverlayProps) {
         <div className="absolute left-0 top-0 transition-all duration-300" style={{
             width: state.tileSize.width, height: state.tileSize.height,
             opacity: visible ? 1 : 0,
+            zIndex,
             ...(state.videoStarted ? { transform: `translateY(${isMobile() ? 150 : 100}%)`, pointerEvents: 'none' as const } : {}),
         }}>
             <div className="absolute left-0 top-0 h-full bg-black overflow-scroll box-border"

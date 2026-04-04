@@ -54,7 +54,7 @@ function SimpleSearch() {
     return (
         <div ref={wrapperRef} className="relative inline-block">
             <button
-                className="font-sans text-lg inline-flex items-center gap-1"
+                className="font-sans text-lg uppercase inline-flex items-center gap-1"
                 onClick={() => setIsActive(prev => !prev)}
             >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

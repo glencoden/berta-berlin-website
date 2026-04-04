@@ -27,18 +27,20 @@ function DashboardMenu({ menuItem, options, selectedOptionValue, onMenuItemClick
     return (
         <div ref={menuRef} className="relative inline-block mr-[2rem]">
             <button
-                className="text-2xl font-sans text-primary-light hover:text-white transition-colors duration-200 uppercase"
+                className={`font-sans text-lg uppercase px-4 py-1 ${
+                    selectedOptionValue ? 'text-primary border border-primary/50 rounded' : ''
+                }`}
                 onClick={() => setIsOpen(prev => !prev)}
             >
                 {children}
             </button>
             {isOpen && (
-                <div className="absolute left-0 top-full mt-1 bg-black/90 rounded shadow-lg min-w-[200px] z-50">
+                <div className="absolute left-0 top-full mt-1 bg-white rounded shadow-lg min-w-[200px] z-50">
                     {options.map(option => (
                         <button
                             key={option.value}
-                            className={`block w-full text-left px-4 py-2 text-lg font-sans transition-colors duration-200 ${
-                                option.value === selectedOptionValue ? 'text-secondary' : 'text-primary-light hover:text-white'
+                            className={`block w-full text-left px-4 py-2 text-lg font-sans hover:bg-neutral-100 ${
+                                option.value === selectedOptionValue ? 'bg-neutral-200' : ''
                             }`}
                             onClick={() => {
                                 onMenuItemClick({ ...menuItem, value: option });

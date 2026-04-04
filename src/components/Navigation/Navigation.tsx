@@ -81,9 +81,9 @@ function Navigation() {
                             return (
                                 <button
                                     key={index}
-                                    className={`font-sans text-lg mr-[2rem] px-4 py-1 ${
+                                    className={`font-sans text-lg uppercase mr-[2rem] px-4 py-1 ${
                                         !playlist && menuItem.value === filter
-                                            ? 'border border-current rounded'
+                                            ? 'text-primary border border-primary/50 rounded'
                                             : ''
                                     }`}
                                     onClick={() => onMenuItemClick(menuItem)}

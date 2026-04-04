@@ -230,6 +230,7 @@ function Lane({ isPlaylistsLoading }: LaneProps) {
                 <PlayerOverlay
                     activeItem={activeItem}
                     visible={showControls}
+                    zIndex={(tiles?.length ?? 0) + 2}
                 />
             </div>
         </>

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:data": "tsx scripts/build-data.ts",
+    "build:data": "tsx --env-file=.env scripts/build-data.ts",
     "build:full": "npm run build:data && npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
