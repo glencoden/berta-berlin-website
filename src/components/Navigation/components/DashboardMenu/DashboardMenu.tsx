@@ -5,8 +5,8 @@ import type { SubmenuItem } from '../../helpers/getPlaylistSubmenuItems';
 interface DashboardMenuProps {
     menuItem: MenuItem;
     options: SubmenuItem[];
-    selectedOptionValue: string | null;
-    onMenuItemClick: (menuItem: MenuItem & { value: unknown }) => void;
+    selectedOptionValue: string | null | undefined;
+    onMenuItemClick: (menuItem: MenuItem) => void;
     children: ReactNode;
 }
 

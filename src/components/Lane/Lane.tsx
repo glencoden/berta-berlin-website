@@ -156,7 +156,6 @@ function Lane() {
                 )}
                 {items.slice(0, numRenderedTiles).map((item, index) => {
                     const tile = mapItemToTile(item);
-                    const isActive = index === 0;
                     const transform = index * tileOffset - activeIndex * tileOffset;
                     const position = index === 0 ? 'first' : index === numRenderedTiles - 1 ? 'last' : 'middle';
                     const hide = state.currentTransition === TransitionType.SLIDE_OUT;

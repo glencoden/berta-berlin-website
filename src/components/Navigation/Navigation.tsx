@@ -1,9 +1,8 @@
-import { useCallback, useEffect, useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useQueryParam, StringParam } from 'use-query-params';
 import { useApplicationContext } from '../../context';
 import { ApplicationActionType } from '../../context/ApplicationActionType';
 import { TransitionType } from '../../enums/TransitionType';
-import { FilterType } from '../../enums/FilterType';
 import { MenuItemType } from '../../enums/MenuItemType';
 import { UrlState } from '../../enums/UrlState';
 import { isMobile } from '../../helpers/isMobile';
@@ -26,6 +25,7 @@ function Navigation() {
     const { state, dispatch } = useApplicationContext();
     const [filterParam, setFilterParam] = useQueryParam(UrlState.FILTER, StringParam);
     const [playlistParam, setPlaylistParam] = useQueryParam(UrlState.PLAYLIST, StringParam);
+    const [isImprintOpen, setIsImprintOpen] = useState(false);
 
     const menuItems = useMemo(() => getMenuItems(), []);
 
@@ -48,7 +48,7 @@ function Navigation() {
         handleMenuItemClick(matchingItem);
     }, []);
 
-    const handleMenuItemClick = useCallback((menuItem: MenuItem & { value: unknown }) => {
+    const handleMenuItemClick = useCallback((menuItem: MenuItem) => {
         const config = parseMenuItem(menuItem);
         dispatch({ type: ApplicationActionType.SET_SELECTED_CONFIG, payload: config });
 
@@ -93,8 +93,12 @@ function Navigation() {
                     </button>
                 )}
                 <div className="flex-1" />
-                <Imprint />
+                <button className="p-2" onClick={() => setIsImprintOpen(true)}>
+                    <img src="/bertaberlin_logo_2023_black.svg" alt="berta berlin" className="w-12 h-12 rounded" />
+                </button>
             </div>
+
+            <Imprint open={isImprintOpen} onClose={() => setIsImprintOpen(false)} />
 
             <div
                 className="fixed top-0 left-0 h-full transition-transform duration-300"

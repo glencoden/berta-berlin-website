@@ -6,7 +6,7 @@ import { editorService } from '../../../services/editorService';
 export interface MenuItem {
     type: MenuItemType;
     label: string;
-    value: string | null;
+    value: string | SubmenuItem | null;
     options?: SubmenuItem[];
 }
 
