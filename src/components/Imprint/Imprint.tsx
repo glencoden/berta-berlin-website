@@ -231,7 +231,7 @@ function Imprint({ open, onClose }: ImprintProps) {
             ref={dialogRef}
             onClose={onClose}
             onClick={(e) => { if (e.target === dialogRef.current) onClose(); }}
-            className="backdrop:bg-black/50 bg-white rounded shadow-lg p-8 whitespace-pre-line"
+            className="backdrop:bg-black/50 bg-white rounded shadow-lg p-8 whitespace-pre-line fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 m-0"
             style={{ width: 'min(600px, 80vw)', maxHeight: isMobile() ? '50vh' : '90vh', overflow: 'auto' }}
         >
             <h2 className="text-xl font-sans mb-4">Imprint</h2>

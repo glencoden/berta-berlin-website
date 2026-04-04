@@ -51,40 +51,42 @@ function SimpleSearch() {
         setResults([]);
     }, [dispatch]);
 
-    return (
-        <div ref={wrapperRef} className="relative inline-block">
+    if (!isActive) {
+        return (
             <button
-                className="font-sans text-lg uppercase inline-flex items-center gap-1"
-                onClick={() => setIsActive(prev => !prev)}
+                className="font-sans text-lg uppercase px-4 py-1 inline-flex items-center gap-2"
+                onClick={() => setIsActive(true)}
             >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
                 </svg>
                 search
             </button>
-            {isActive && (
-                <div className="absolute right-0 top-full mt-1 z-50">
-                    <input
-                        autoFocus
-                        type="text"
-                        value={query}
-                        onChange={e => setQuery(e.target.value)}
-                        placeholder="Search..."
-                        className="w-[250px] px-3 py-2 text-lg font-sans bg-black/90 text-white border border-primary-light rounded outline-none"
-                    />
-                    {results.length > 0 && (
-                        <div className="bg-black/90 rounded shadow-lg mt-1 max-h-[300px] overflow-y-auto">
-                            {results.map(video => (
-                                <button
-                                    key={video.id}
-                                    className="block w-full text-left px-3 py-2 text-lg font-sans text-primary-light hover:text-white transition-colors duration-200"
-                                    onClick={() => onSelect(video)}
-                                >
-                                    {video.title}
-                                </button>
-                            ))}
-                        </div>
-                    )}
+        );
+    }
+
+    return (
+        <div ref={wrapperRef} className="relative inline-block">
+            <input
+                autoFocus
+                type="text"
+                value={query}
+                onChange={e => setQuery(e.target.value)}
+                placeholder="search"
+                style={{ width: isMobile() ? 180 : 240, fontSize: '16px' }}
+                className="px-3 py-1 font-sans border border-neutral-300 rounded outline-none focus:border-primary"
+            />
+            {results.length > 0 && (
+                <div className="absolute left-0 top-full mt-1 w-full bg-white rounded shadow-lg z-50 max-h-[300px] overflow-y-auto">
+                    {results.map(video => (
+                        <button
+                            key={video.id}
+                            className="block w-full text-left px-3 py-2 text-sm font-sans hover:bg-neutral-100 truncate"
+                            onMouseDown={() => onSelect(video)}
+                        >
+                            {video.title}
+                        </button>
+                    ))}
                 </div>
             )}
         </div>
