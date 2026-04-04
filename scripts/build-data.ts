@@ -1,7 +1,13 @@
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { loadEnvFile } from 'node:process';
 import { fetchVideos, fetchPlaylists, fetchExternalVideos } from './fetch-youtube-data.js';
 import { computeTrends } from './compute-trends.js';
+
+const envPath = resolve(import.meta.dirname, '..', '.env');
+if (existsSync(envPath)) {
+    loadEnvFile(envPath);
+}
 
 if (!process.env.BERTA_YOUTUBE_API_KEY) {
     console.error('Missing BERTA_YOUTUBE_API_KEY environment variable');
@@ -13,7 +19,10 @@ const OUTPUT_DIR = resolve(import.meta.dirname, '..', 'src', 'data');
 function stripTrendStatistics<T extends { trendStatistics?: unknown }>(
     items: T[],
 ): Omit<T, 'trendStatistics'>[] {
-    return items.map(({ trendStatistics: _, ...rest }) => rest);
+    return items.map(({ trendStatistics, ...rest }) => {
+        void trendStatistics;
+        return rest;
+    });
 }
 
 async function main() {
