@@ -1,0 +1,45 @@
+name: Deploy Preview
+
+on:
+  push:
+    branches:
+      - develop
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch YouTube data and compute trends
+        run: npm run build:data
+        env:
+          BERTA_YOUTUBE_API_KEY: ${{ secrets.BERTA_YOUTUBE_API_KEY }}
+
+      - name: Build app
+        run: npm run build -- --base=/berta-berlin-website/
+
+      - name: Deploy to GitHub Pages
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: preview
+          FOLDER: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build: ({sha}) {msg}"

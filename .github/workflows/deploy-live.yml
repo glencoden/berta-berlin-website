@@ -1,0 +1,53 @@
+name: Deploy Live
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-live:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch YouTube data and compute trends
+        run: npm run build:data
+        env:
+          BERTA_YOUTUBE_API_KEY: ${{ secrets.BERTA_YOUTUBE_API_KEY }}
+
+      - name: Commit updated trend history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/trend-history.json
+          git diff --staged --quiet || git commit -m "update trend history [skip ci]"
+          git push
+
+      - name: Build app
+        run: npm run build
+
+      - name: Deploy via SFTP
+        uses: Creepios/sftp-action@v1.0.3
+        with:
+          host: access800891440.webspace-data.io
+          port: 22
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localPath: ./dist/
+          remotePath: ./
