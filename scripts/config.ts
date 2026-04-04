@@ -1,0 +1,4 @@
+export const YOUTUBE_CHANNEL_ID = 'UCz74WCGrXmY3On0l96NNaVA';
+export const GOOGLE_API_MAX_RESULTS = 50;
+export const VIDEO_TREND_PERIOD = 14;
+export const MAX_NUM_VIDEO_TREND_STATISTICS = 56;
