@@ -18,7 +18,7 @@ function TileSwitch({ onPrev, onNext, numTiles, activeIndex, visible }: TileSwit
 
     return (
         <div
-            className="flex absolute items-center transition-opacity duration-300"
+            className="flex absolute transition-opacity duration-300"
             style={{
                 left: state.tileSize.width / 2,
                 top: -(laneTop / 2),
