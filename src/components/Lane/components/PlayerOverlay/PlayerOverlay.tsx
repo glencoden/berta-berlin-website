@@ -60,8 +60,8 @@ function PlayerOverlay({ activeItem, visible, zIndex }: PlayerOverlayProps) {
         }}>
             <div className="absolute left-0 top-0 h-full bg-black overflow-scroll box-border"
                 style={{ width: `${controlsOverlayWidth}%`, paddingBottom: `calc(${controlsMargin}rem + 42px)` }}>
-                <h4 className="text-2xl text-white font-sans" style={{ padding: `${controlsMargin}rem` }}>{activeItem.title}</h4>
-                <h6 className="text-lg text-white font-sans" style={{ padding: `0 ${controlsMargin}rem` }}>{parsedDescription.detail}</h6>
+                <h4 className="text-white font-sans" style={{ fontSize: '2.125rem', padding: `${controlsMargin}rem` }}>{activeItem.title}</h4>
+                <h6 className="text-white font-sans" style={{ fontSize: '1.25rem', padding: `0 ${controlsMargin}rem` }}>{parsedDescription.detail}</h6>
             </div>
             <div className="absolute top-1/2" style={{ right: rightTileAreaWidth / 2, transform: 'translate(50%, -50%)' }}>
                 {!state.videoStarted && (
