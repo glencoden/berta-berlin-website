@@ -1,9 +1,11 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useQueryParam, StringParam } from 'use-query-params';
 import { useApplicationContext } from '../../context';
 import { ApplicationActionType } from '../../context/ApplicationActionType';
 import { TransitionType } from '../../enums/TransitionType';
 import { MenuItemType } from '../../enums/MenuItemType';
+import { FilterType } from '../../enums/FilterType';
+import { ResourceType } from '../../enums/ResourceType';
 import { UrlState } from '../../enums/UrlState';
 import { isMobile } from '../../helpers/isMobile';
 import { getMenuItems, type MenuItem } from './helpers/getMenuItems';
@@ -12,146 +14,147 @@ import NavigationTitle from './components/NavigationTitle/NavigationTitle';
 import DashboardMenu from './components/DashboardMenu/DashboardMenu';
 import SimpleSearch from '../Search/SimpleSearch';
 import BurgerIcon from './components/BurgerIcon/BurgerIcon';
+import Image from '../Image/Image';
 import Imprint from '../Imprint/Imprint';
+import { PlayerActionType } from '../Player/context/PlayerActionType';
+import { usePlayerContext } from '../Player/context';
 import {
     navigationMargin,
     navigationZIndex,
     sidebarWidth,
     laneLeft,
-    fullDeviceWidth,
 } from '../../variables';
 
 function Navigation() {
-    const { state, dispatch } = useApplicationContext();
-    const [filterParam, setFilterParam] = useQueryParam(UrlState.FILTER, StringParam);
-    const [playlistParam, setPlaylistParam] = useQueryParam(UrlState.PLAYLIST, StringParam);
+    const { state, dispatch: appDispatch } = useApplicationContext();
+    const { dispatch: playerDispatch } = usePlayerContext();
+
+    const [menuItems] = useState(() => getMenuItems());
     const [isImprintOpen, setIsImprintOpen] = useState(false);
 
-    const menuItems = useMemo(() => getMenuItems(), []);
+    const [filter, setFilter] = useQueryParam(UrlState.FILTER, StringParam);
+    const [playlist, setPlaylist] = useQueryParam(UrlState.PLAYLIST, StringParam);
 
     useEffect(() => {
-        if (!filterParam && !playlistParam) return;
-        const matchingItem = menuItems.find(item => {
-            if (playlistParam && item.type === MenuItemType.DASHBOARD) return true;
-            if (filterParam && item.type === MenuItemType.FILTER && item.value === filterParam) return true;
-            return false;
+        const filterType = (filter as FilterType) || FilterType.RECENT;
+        setFilter(filterType);
+        appDispatch({
+            type: ApplicationActionType.SET_SELECTED_CONFIG,
+            payload: {
+                filterType,
+                resourceType: !playlist ? ResourceType.VIDEO : ResourceType.PLAYLIST,
+                selectedPlaylistId: playlist ?? null,
+            },
         });
-        if (!matchingItem) return;
+    }, [filter, playlist]);
 
-        if (playlistParam && matchingItem.type === MenuItemType.DASHBOARD) {
-            const option = matchingItem.options?.find(o => o.value === playlistParam);
-            if (option) {
-                handleMenuItemClick({ ...matchingItem, value: option });
-                return;
-            }
-        }
-        handleMenuItemClick(matchingItem);
-    }, []);
-
-    const handleMenuItemClick = useCallback((menuItem: MenuItem) => {
+    const onMenuItemClick = useCallback((menuItem: MenuItem) => {
         const config = parseMenuItem(menuItem);
-        dispatch({ type: ApplicationActionType.SET_SELECTED_CONFIG, payload: config });
 
-        if (menuItem.type === MenuItemType.FILTER) {
-            setFilterParam(menuItem.value as string);
-            setPlaylistParam(undefined);
-        } else if (menuItem.type === MenuItemType.DASHBOARD) {
-            const optionValue = (menuItem.value as { value?: string } | null)?.value ?? null;
-            setPlaylistParam(optionValue);
-            setFilterParam(undefined);
-        }
+        setFilter(config.filterType);
+        setPlaylist(config.selectedPlaylistId);
 
-        if (state.currentTransition === TransitionType.NONE) {
-            dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.SLIDE_OUT });
-        }
-
-        if (isMobile()) {
-            dispatch({ type: ApplicationActionType.SET_MENU_OPEN, payload: false });
-        }
-    }, [dispatch, state.currentTransition, setFilterParam, setPlaylistParam]);
-
-    const toggleMenu = useCallback(() => {
-        dispatch({ type: ApplicationActionType.SET_MENU_OPEN, payload: !state.menuOpen });
-    }, [dispatch, state.menuOpen]);
+        playerDispatch({ type: PlayerActionType.STOP });
+        appDispatch({ type: ApplicationActionType.SET_VIDEO_STARTED, payload: false });
+        appDispatch({ type: ApplicationActionType.SET_SELECTED_CONFIG, payload: config });
+        appDispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.SLIDE_OUT });
+    }, [appDispatch, playerDispatch, setFilter, setPlaylist]);
 
     const mobile = isMobile();
-    const menuLeft = mobile ? sidebarWidth : laneLeft;
 
     return (
         <>
+            {!mobile && <NavigationTitle />}
+
             <div
-                className="fixed top-0 left-0 h-full flex flex-col items-center justify-between py-4 bg-black"
+                className="absolute bg-white transition-transform duration-300"
+                style={{
+                    left: laneLeft,
+                    top: `${navigationMargin}rem`,
+                    zIndex: navigationZIndex,
+                    transform: `translateX(${state.menuOpen ? '0' : `calc(-100% - ${2 * laneLeft}px)`})`,
+                }}
+            >
+                {menuItems.map((menuItem, index) => {
+                    switch (menuItem.type) {
+                        case MenuItemType.FILTER:
+                            return (
+                                <button
+                                    key={index}
+                                    className={`font-sans text-lg mr-[2rem] px-4 py-1 ${
+                                        !playlist && menuItem.value === filter
+                                            ? 'border border-current rounded'
+                                            : ''
+                                    }`}
+                                    onClick={() => onMenuItemClick(menuItem)}
+                                >
+                                    {menuItem.label}
+                                </button>
+                            );
+                        case MenuItemType.DASHBOARD:
+                            return (
+                                <DashboardMenu
+                                    key={index}
+                                    menuItem={menuItem}
+                                    options={menuItem.options ?? []}
+                                    selectedOptionValue={playlist}
+                                    onMenuItemClick={onMenuItemClick}
+                                >
+                                    {menuItem.label}
+                                </DashboardMenu>
+                            );
+                        default:
+                            return null;
+                    }
+                })}
+
+                <SimpleSearch />
+            </div>
+
+            <div
+                className="fixed left-0 top-0"
                 style={{
                     width: sidebarWidth,
-                    zIndex: navigationZIndex + 1,
-                    animation: 'sidebar-slide-in 0.5s ease-out',
+                    height: mobile ? `${window.innerHeight}px` : '100vh',
+                    zIndex: navigationZIndex,
+                    backgroundColor: 'var(--color-primary)',
+                    animation: 'sidebar-slide-in 0.3s ease',
                 }}
             >
                 {mobile && (
-                    <button className="p-2" onClick={toggleMenu}>
+                    <button
+                        className="absolute left-1/2 -translate-x-1/2"
+                        style={{ top: `${navigationMargin}rem` }}
+                        onClick={() => {
+                            window.scroll(0, 0);
+                            appDispatch({
+                                type: ApplicationActionType.SET_MENU_OPEN,
+                                payload: !state.menuOpen,
+                            });
+                        }}
+                    >
                         <BurgerIcon showCancelIcon={state.menuOpen} />
                     </button>
                 )}
-                <div className="flex-1" />
-                <button className="p-2" onClick={() => setIsImprintOpen(true)}>
-                    <img src="/bertaberlin_logo_2023_black.svg" alt="berta berlin" className="w-12 h-12 rounded" />
+                <button
+                    className="absolute left-1/2 -translate-x-1/2"
+                    style={{ bottom: `${navigationMargin}rem` }}
+                    onClick={() => setIsImprintOpen(true)}
+                    title="imprint"
+                >
+                    <div className="relative w-12 h-12 rounded overflow-hidden">
+                        <Image
+                            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                            url="/bertaberlin_logo_2023_black.svg"
+                            width={96}
+                            height={96}
+                            title="berta berlin icon"
+                        />
+                    </div>
                 </button>
             </div>
 
             <Imprint open={isImprintOpen} onClose={() => setIsImprintOpen(false)} />
-
-            <div
-                className="fixed top-0 left-0 h-full transition-transform duration-300"
-                style={{
-                    width: mobile ? '100vw' : `calc(100vw - ${laneLeft}px)`,
-                    left: menuLeft,
-                    zIndex: navigationZIndex,
-                    transform: state.menuOpen || !mobile ? 'translateX(0)' : `translateX(-100vw)`,
-                    backgroundColor: mobile ? 'rgba(0,0,0,0.95)' : 'transparent',
-                    pointerEvents: state.menuOpen ? 'auto' : 'none',
-                }}
-            >
-                <NavigationTitle />
-
-                <div
-                    className="absolute flex flex-wrap gap-6 items-center"
-                    style={{
-                        left: window.innerWidth >= fullDeviceWidth ? 0 : `${navigationMargin}rem`,
-                        bottom: `${navigationMargin}rem`,
-                    }}
-                >
-                    {menuItems.map(item => {
-                        if (item.type === MenuItemType.DASHBOARD && item.options) {
-                            return (
-                                <DashboardMenu
-                                    key={item.label}
-                                    menuItem={item}
-                                    options={item.options}
-                                    selectedOptionValue={state.selectedConfig.selectedPlaylistId}
-                                    onMenuItemClick={handleMenuItemClick}
-                                >
-                                    {item.label}
-                                </DashboardMenu>
-                            );
-                        }
-                        const isActive = state.selectedConfig.filterType === item.value &&
-                            state.selectedConfig.selectedPlaylistId === null;
-                        return (
-                            <button
-                                key={item.label}
-                                className={`text-2xl font-sans uppercase transition-colors duration-200 ${
-                                    isActive ? 'text-secondary' : 'text-primary-light hover:text-white'
-                                }`}
-                                style={{ pointerEvents: 'auto' }}
-                                onClick={() => handleMenuItemClick(item)}
-                            >
-                                {item.label}
-                            </button>
-                        );
-                    })}
-                    <SimpleSearch />
-                </div>
-            </div>
         </>
     );
 }

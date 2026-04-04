@@ -25,7 +25,7 @@ function DashboardMenu({ menuItem, options, selectedOptionValue, onMenuItemClick
     }, []);
 
     return (
-        <div ref={menuRef} className="relative inline-block">
+        <div ref={menuRef} className="relative inline-block mr-[2rem]">
             <button
                 className="text-2xl font-sans text-primary-light hover:text-white transition-colors duration-200 uppercase"
                 onClick={() => setIsOpen(prev => !prev)}

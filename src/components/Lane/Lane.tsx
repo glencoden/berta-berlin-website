@@ -18,177 +18,218 @@ import {
     laneTop,
     laneTileOffset,
     laneTileAnimationOffset,
+    sidebarWidth,
     mobileContentMargin,
-    fullDeviceWidth,
 } from '../../variables';
 import type { Video } from '../../types/video';
 
-function Lane() {
+const TilePosition = {
+    INTERMEDIATE: 'intermediate',
+    FIRST: 'first',
+    LAST: 'last',
+} as const;
+
+interface LaneProps {
+    isPlaylistsLoading: boolean;
+}
+
+function Lane({ isPlaylistsLoading }: LaneProps) {
     const { state, dispatch } = useApplicationContext();
+
     const [items, setItems] = useState<Video[] | null>(null);
     const [activeIndex, setActiveIndex] = useState(0);
-    const observerRef = useRef<IntersectionObserver | null>(null);
-    const laneRef = useRef<HTMLDivElement>(null);
-
-    const numRenderedTiles = useMemo(() => getNumRenderedTiles(state.tileSize), [state.tileSize]);
 
     const onSelectPrev = useCallback(() => {
         if (state.currentTransition !== TransitionType.NONE) return;
-        setActiveIndex(prev => Math.max(0, prev - 1));
+        setActiveIndex(prev => Math.max(prev - 1, 0));
     }, [state.currentTransition]);
 
     const onSelectNext = useCallback(() => {
-        if (state.currentTransition !== TransitionType.NONE || !items) return;
-        setActiveIndex(prev => Math.min(items.length - 1, prev + 1));
+        if (state.currentTransition !== TransitionType.NONE) return;
+        setActiveIndex(prev => Math.min(prev + 1, (items?.length ?? 1) - 1));
     }, [state.currentTransition, items]);
 
+    const activeItem = items?.[activeIndex] ?? null;
+
+    const tiles = items
+        ?.slice(0, activeIndex + getNumRenderedTiles(state.tileSize))
+        .map(mapItemToTile);
+
+    const transitionTypeRef = useRef(state.currentTransition);
+    const isEmptyListRef = useRef(false);
+
     useEffect(() => {
-        if (!state.selectedConfig) return;
+        if (state.selectedConfig === null) return;
+        transitionTypeRef.current = state.currentTransition;
 
         switch (state.currentTransition) {
-            case TransitionType.SLIDE_OUT: {
-                const videos = editorService.getVideos(state.selectedConfig);
-                if (videos.length === 0) {
+            case TransitionType.NONE:
+                break;
+            case TransitionType.SLIDE_OUT:
+                if (isEmptyListRef.current) {
                     dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.SLIDE_IN });
-                    return;
                 }
                 break;
-            }
             case TransitionType.SLIDE_IN: {
-                const videos = editorService.getVideos(state.selectedConfig);
-                setItems(videos);
                 setActiveIndex(0);
+                const updatedItems = editorService.getVideos(state.selectedConfig);
+                isEmptyListRef.current = updatedItems.length === 0;
+                setItems(updatedItems.length === 0 ? null : updatedItems);
                 break;
             }
             case TransitionType.INSERT: {
                 const insertVideo = editorService.getInsertVideo();
-                if (insertVideo) {
-                    setItems(prev => {
-                        if (!prev) return [insertVideo];
-                        return [{ ...insertVideo, renderKey: `${insertVideo.id}-${Date.now()}` }, ...prev];
-                    });
+                setItems(prevItems => {
+                    if (insertVideo === null) return prevItems;
+                    if (prevItems === null) return [insertVideo];
+                    const currentItemList = [...prevItems];
+                    const insertVideoIndex = currentItemList.findIndex(item => item.id === insertVideo.id);
+                    if (insertVideoIndex > -1) currentItemList.splice(insertVideoIndex, 1);
                     setActiveIndex(0);
-                }
-                editorService.setInsertVideo(null);
-                dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.NONE });
+                    return [insertVideo, ...currentItemList];
+                });
+                setTimeout(() => {
+                    dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.NONE });
+                }, 0);
                 break;
             }
         }
     }, [state.selectedConfig, state.currentTransition, dispatch]);
 
     useEffect(() => {
-        const onKeyDown = (e: KeyboardEvent) => {
-            if (e.key === 'ArrowLeft') onSelectPrev();
-            if (e.key === 'ArrowRight') onSelectNext();
+        const onKeydown = (event: KeyboardEvent) => {
+            if (event.key === 'ArrowLeft') onSelectPrev();
+            else if (event.key === 'ArrowRight') onSelectNext();
         };
-        window.addEventListener('keydown', onKeyDown);
-        return () => window.removeEventListener('keydown', onKeyDown);
+        window.addEventListener('keydown', onKeydown);
+        return () => window.removeEventListener('keydown', onKeydown);
     }, [onSelectPrev, onSelectNext]);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                for (const entry of entries) {
-                    const position = (entry.target as HTMLElement).dataset.position;
-                    if (position === 'first' && entry.isIntersecting && state.currentTransition === TransitionType.SLIDE_IN) {
+    const tileObserver = useMemo(() => {
+        if (typeof IntersectionObserver === 'undefined') return null;
+        return new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    const el = entry.target as HTMLElement;
+                    if (
+                        entry.isIntersecting
+                        && el.dataset.position === TilePosition.FIRST
+                        && transitionTypeRef.current === TransitionType.SLIDE_IN
+                    ) {
                         dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.NONE });
-                    }
-                    if (position === 'last' && !entry.isIntersecting && state.currentTransition === TransitionType.SLIDE_OUT) {
+                        dispatch({ type: ApplicationActionType.SET_HAS_LOADED, payload: true });
+                    } else if (
+                        !entry.isIntersecting
+                        && el.dataset.position === TilePosition.LAST
+                        && transitionTypeRef.current === TransitionType.SLIDE_OUT
+                    ) {
                         dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.SLIDE_IN });
                     }
-                }
+                });
             },
-            { threshold: 0 },
+            { rootMargin: '0px' },
         );
-        observerRef.current = observer;
-        return () => observer.disconnect();
-    }, [state.currentTransition, dispatch]);
+    }, [dispatch]);
 
-    if (!items) return null;
-
+    const showTiles = state.currentTransition !== TransitionType.SLIDE_OUT;
+    const showControls = state.currentTransition === TransitionType.NONE;
     const mobile = isMobile();
-    const tileWidth = state.tileSize.width;
-    const tileHeight = state.tileSize.height;
-    const left = mobile ? mobileContentMargin : laneLeft;
-    const top = mobile ? mobileContentMargin : laneTop;
-    const tileOffset = mobile ? 0 : laneTileOffset;
-    const laneWidth = tileWidth + (numRenderedTiles - 1) * tileOffset;
 
     return (
         <>
             {mobile && (
-                <TileSwitchMobile
-                    onPrev={onSelectPrev}
-                    onNext={onSelectNext}
-                    numTiles={items.length}
-                />
+                <TileSwitchMobile onPrev={onSelectPrev} onNext={onSelectNext} numTiles={tiles?.length} />
             )}
             <div
-                ref={laneRef}
-                className="absolute"
-                style={{ left, top, width: laneWidth, height: tileHeight }}
+                className="transition-transform duration-300"
+                style={{
+                    position: mobile ? 'fixed' : 'absolute',
+                    left: mobile ? sidebarWidth + mobileContentMargin : laneLeft,
+                    top: mobile ? mobileContentMargin : laneTop,
+                    width: state.tileSize.width,
+                    height: 2 * state.tileSize.height,
+                    transform: `translateY(${state.menuOpen ? `${laneTop / 2}px` : '0'})`,
+                }}
             >
                 <div
-                    className="absolute w-3 h-3 bg-primary rotate-45"
+                    className="absolute"
                     style={{
-                        left: tileWidth / 2,
-                        top: -(laneTop / 2),
-                        transform: 'translate(-50%, -50%) rotate(45deg)',
+                        left: -(mobile ? sidebarWidth + mobileContentMargin : laneLeft),
+                        top: state.tileSize.height / 2,
+                        width: state.tileSize.width / 3,
+                        height: state.tileSize.width / 3,
+                        backgroundColor: 'var(--color-primary)',
+                        transformOrigin: '0 0',
+                        rotate: '45deg',
+                        translate: !isPlaylistsLoading ? '0 0' : '-200% 0',
+                        animation: !isPlaylistsLoading ? 'slide-in 1s' : 'none',
                     }}
                 />
                 <div
                     className="absolute bg-white"
                     style={{
-                        left: 0,
-                        top: tileHeight,
-                        width: window.innerWidth >= fullDeviceWidth ? tileWidth : '100vw',
-                        height: 4,
+                        left: -(mobile ? sidebarWidth + mobileContentMargin : laneLeft),
+                        top: 0,
+                        width: sidebarWidth + 3,
+                        height: 2 * state.tileSize.height,
                     }}
                 />
+
                 {!mobile && (
                     <TileSwitch
                         onPrev={onSelectPrev}
                         onNext={onSelectNext}
-                        numTiles={items.length}
+                        numTiles={items?.length}
                         activeIndex={activeIndex}
-                        visible={state.currentTransition === TransitionType.NONE}
+                        visible={showControls}
                     />
                 )}
-                {items.slice(0, numRenderedTiles).map((item, index) => {
-                    const tile = mapItemToTile(item);
-                    const transform = index * tileOffset - activeIndex * tileOffset;
-                    const position = index === 0 ? 'first' : index === numRenderedTiles - 1 ? 'last' : 'middle';
-                    const hide = state.currentTransition === TransitionType.SLIDE_OUT;
-                    const delay = index * laneTileAnimationOffset;
+
+                {tiles?.map((tile, index) => {
+                    const displayIndex = index - activeIndex;
+                    const hideTile = !showTiles || displayIndex < 0;
+                    const position = index === 0
+                        ? TilePosition.FIRST
+                        : index === (tiles.length - 1)
+                            ? TilePosition.LAST
+                            : TilePosition.INTERMEDIATE;
+                    const transform = displayIndex * laneTileOffset;
+                    const zIndex = tiles.length - displayIndex;
+                    const delay = (hideTile ? displayIndex : (tiles.length - 1 - index)) * laneTileAnimationOffset;
 
                     return (
                         <Tile
                             key={tile.key}
-                            hide={hide}
+                            hide={hideTile}
                             position={position}
                             transform={transform}
-                            zIndex={numRenderedTiles - index}
+                            zIndex={zIndex}
                             delay={delay}
                             setActive={() => setActiveIndex(index)}
-                            observer={observerRef.current}
+                            observer={tileObserver}
                         >
                             <Image
                                 url={tile.url}
-                                width={tileWidth}
-                                height={tileHeight}
+                                width={state.tileSize.width}
+                                height={state.tileSize.height}
                                 title={tile.title}
                             />
                         </Tile>
                     );
                 })}
+
                 <VideoDetail
-                    activeItem={items[activeIndex] ?? null}
-                    visible={state.currentTransition === TransitionType.NONE}
+                    activeItem={activeItem}
+                    visible={showControls}
                 />
-                <Player hasVideoStarted={state.videoStarted} />
+
+                <div className="relative" style={{ zIndex: (tiles?.length ?? 0) + 1 }}>
+                    <Player hasVideoStarted={state.videoStarted} />
+                </div>
+
                 <PlayerOverlay
-                    activeItem={items[activeIndex] ?? null}
-                    visible={state.currentTransition === TransitionType.NONE}
+                    activeItem={activeItem}
+                    visible={showControls}
                 />
             </div>
         </>

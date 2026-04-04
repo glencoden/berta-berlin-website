@@ -21,11 +21,22 @@ export type ApplicationAction =
 function applicationReducer(state: ApplicationState, action: ApplicationAction): ApplicationState {
     switch (action.type) {
         case ApplicationActionType.SET_HAS_LOADED:
-            return { ...state, hasLoaded: action.payload };
+            return {
+                ...state,
+                hasLoaded: action.payload,
+                menuOpen: !state.isMobile,
+            };
         case ApplicationActionType.SET_MENU_OPEN:
-            return { ...state, menuOpen: action.payload };
+            return {
+                ...state,
+                menuOpen: !state.isMobile || action.payload,
+            };
         case ApplicationActionType.SET_SELECTED_CONFIG:
-            return { ...state, selectedConfig: action.payload };
+            return {
+                ...state,
+                menuOpen: state.isMobile ? false : state.hasLoaded,
+                selectedConfig: action.payload,
+            };
         case ApplicationActionType.SET_CURRENT_TRANSITION:
             return { ...state, currentTransition: action.payload };
         case ApplicationActionType.SET_VIDEO_STARTED:

@@ -61,7 +61,7 @@ function AppContent() {
         <PlayerProvider>
             <LoadingMessage visible={!state.hasLoaded}>loading...</LoadingMessage>
             {state.hasLoaded && <Navigation />}
-            {isReady && <Lane />}
+            {isReady && <Lane isPlaylistsLoading={!isReady} />}
         </PlayerProvider>
     );
 }

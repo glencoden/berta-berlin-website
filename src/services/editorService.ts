@@ -66,7 +66,9 @@ class EditorService {
         });
     }
 
-    setInsertVideo(id: string | null): void {
+    setInsertVideo(id: string): void {
+        const insertVideo = this.getAllVideos()?.find(video => video.id === id);
+        if (!insertVideo) return;
         this._insertVideoId = id;
     }
 
