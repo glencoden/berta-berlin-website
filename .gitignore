@@ -24,7 +24,4 @@ dist-ssr
 *.sln
 *.sw?
 
-src/data/video.json
-src/data/playlist.json
-src/data/external-video.json
 dist-scripts/
