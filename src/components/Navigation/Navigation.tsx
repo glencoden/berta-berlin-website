@@ -145,7 +145,7 @@ function Navigation() {
                     <div className="relative w-12 h-12 rounded overflow-hidden">
                         <Image
                             className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-                            url="/bertaberlin_logo_2023_black.svg"
+                            url={`${import.meta.env.BASE_URL}bertaberlin_logo_2023_black.svg`}
                             width={96}
                             height={96}
                             title="berta berlin icon"
