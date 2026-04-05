@@ -57,10 +57,13 @@ function Lane({ isPlaylistsLoading }: LaneProps) {
 
     const transitionTypeRef = useRef(state.currentTransition);
     const isEmptyListRef = useRef(false);
+    const transitionSafetyTimeoutRef = useRef(0);
 
     useEffect(() => {
         if (state.selectedConfig === null) return;
         transitionTypeRef.current = state.currentTransition;
+
+        window.clearTimeout(transitionSafetyTimeoutRef.current);
 
         switch (state.currentTransition) {
             case TransitionType.NONE:
@@ -68,6 +71,12 @@ function Lane({ isPlaylistsLoading }: LaneProps) {
             case TransitionType.SLIDE_OUT:
                 if (isEmptyListRef.current) {
                     dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.SLIDE_IN });
+                } else {
+                    transitionSafetyTimeoutRef.current = window.setTimeout(() => {
+                        if (transitionTypeRef.current === TransitionType.SLIDE_OUT) {
+                            dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.SLIDE_IN });
+                        }
+                    }, 2000);
                 }
                 break;
             case TransitionType.SLIDE_IN: {
@@ -75,6 +84,13 @@ function Lane({ isPlaylistsLoading }: LaneProps) {
                 const updatedItems = editorService.getVideos(state.selectedConfig);
                 isEmptyListRef.current = updatedItems.length === 0;
                 setItems(updatedItems.length === 0 ? null : updatedItems);
+
+                transitionSafetyTimeoutRef.current = window.setTimeout(() => {
+                    if (transitionTypeRef.current === TransitionType.SLIDE_IN) {
+                        dispatch({ type: ApplicationActionType.SET_CURRENT_TRANSITION, payload: TransitionType.NONE });
+                        dispatch({ type: ApplicationActionType.SET_HAS_LOADED, payload: true });
+                    }
+                }, 2000);
                 break;
             }
             case TransitionType.INSERT: {
@@ -94,6 +110,8 @@ function Lane({ isPlaylistsLoading }: LaneProps) {
                 break;
             }
         }
+
+        return () => window.clearTimeout(transitionSafetyTimeoutRef.current);
     }, [state.selectedConfig, state.currentTransition, dispatch]);
 
     useEffect(() => {
