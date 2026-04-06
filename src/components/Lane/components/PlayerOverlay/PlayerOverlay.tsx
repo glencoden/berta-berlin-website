@@ -29,6 +29,7 @@ function PlayerOverlay({ activeItem, visible, zIndex }: PlayerOverlayProps) {
         storageService.setSeenVideoIds(activeItem);
         storageService.setRecentlyWatchedGenres(activeItem);
         playerDispatch({ type: PlayerActionType.SET_VIDEO, payload: activeItem });
+        playerDispatch({ type: PlayerActionType.PLAY });
     }, [activeItem, playerDispatch]);
 
     const onPause = useCallback(() => {
