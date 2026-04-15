@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1776148664127,
+    "updatedAt": 1776235093319,
     "count": 23,
     "playlists": [
         {
@@ -187,7 +187,8 @@
                 "ssLSaqMrx6U",
                 "LSn8Wun5x5M",
                 "DJr_tTNHA3Q",
-                "shV9VxBlczQ"
+                "shV9VxBlczQ",
+                "aKhkCjx-fLE"
             ]
         },
         {
@@ -1867,27 +1868,27 @@
             "description": "We take action to feature and empower talented underrepresented women!\nA berta.berlin playlist.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/GPyC5PDaUdQ/default.jpg",
+                    "url": "https://i.ytimg.com/vi/aKhkCjx-fLE/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/GPyC5PDaUdQ/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/aKhkCjx-fLE/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/GPyC5PDaUdQ/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/aKhkCjx-fLE/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/GPyC5PDaUdQ/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/aKhkCjx-fLE/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/GPyC5PDaUdQ/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/aKhkCjx-fLE/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -1895,6 +1896,7 @@
             "publishedAt": "2020-08-21T11:59:25.182599Z",
             "isPrivate": false,
             "videoIds": [
+                "aKhkCjx-fLE",
                 "GPyC5PDaUdQ",
                 "lFsc3KkDkGw",
                 "HzKIgiteWP8",
