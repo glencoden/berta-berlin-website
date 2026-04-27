@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1777185545715,
+    "updatedAt": 1777272845392,
     "count": 23,
     "playlists": [
         {
@@ -686,27 +686,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/MteUxt0RxCM/default.jpg",
+                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/MteUxt0RxCM/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/MteUxt0RxCM/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/MteUxt0RxCM/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/MteUxt0RxCM/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -714,6 +714,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "0geGyu0pZEQ",
                 "MteUxt0RxCM",
                 "KjFSmakRcGE",
                 "GPyC5PDaUdQ",
@@ -1865,7 +1866,8 @@
                 "DNstrfMVbCs",
                 "DJr_tTNHA3Q",
                 "HzKIgiteWP8",
-                "QbYcIEYEqvM"
+                "QbYcIEYEqvM",
+                "0geGyu0pZEQ"
             ]
         },
         {
@@ -2412,7 +2414,8 @@
                 "QbYcIEYEqvM",
                 "6VkvtTT0Rg4",
                 "GPyC5PDaUdQ",
-                "KjFSmakRcGE"
+                "KjFSmakRcGE",
+                "0geGyu0pZEQ"
             ]
         },
         {
