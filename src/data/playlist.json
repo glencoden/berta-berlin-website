@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1777445465617,
+    "updatedAt": 1777532003277,
     "count": 23,
     "playlists": [
         {
@@ -686,27 +686,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/default.jpg",
+                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/0geGyu0pZEQ/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
