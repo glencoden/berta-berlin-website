@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1777703998363,
+    "updatedAt": 1777791146781,
     "count": 23,
     "playlists": [
         {
@@ -686,27 +686,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/default.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/zYZnSExGfk0/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -714,6 +714,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "JdARAeOyH7I",
                 "zYZnSExGfk0",
                 "0geGyu0pZEQ",
                 "MteUxt0RxCM",
@@ -1422,27 +1423,27 @@
             "description": "Highly energetic and powerful. This says it all.\nA berta.berlin playlist.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/PzBklXoH9X0/default.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/PzBklXoH9X0/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/PzBklXoH9X0/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/PzBklXoH9X0/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/PzBklXoH9X0/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -1450,6 +1451,7 @@
             "publishedAt": "2020-08-22T13:37:16.906183Z",
             "isPrivate": false,
             "videoIds": [
+                "JdARAeOyH7I",
                 "PzBklXoH9X0",
                 "NTv5ZtZdWtw",
                 "TBodMupah5g",
@@ -2414,7 +2416,8 @@
                 "GPyC5PDaUdQ",
                 "KjFSmakRcGE",
                 "0geGyu0pZEQ",
-                "zYZnSExGfk0"
+                "zYZnSExGfk0",
+                "JdARAeOyH7I"
             ]
         },
         {
@@ -2525,8 +2528,8 @@
                 "NZnBonxjZWk",
                 "fwuBxvnMj5g",
                 "TwbTOgI5Tgg",
-                "Af99C0eqsCA",
                 "MiZnv-a2GVI",
+                "Af99C0eqsCA",
                 "QQvZHYxgC9g",
                 "M4JZTy22VWo",
                 "27XnMvcJ-KM",
