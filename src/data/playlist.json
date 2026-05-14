@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1778655800707,
+    "updatedAt": 1778742084442,
     "count": 23,
     "playlists": [
         {
@@ -686,27 +686,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/M_JJDgOkgtU/default.jpg",
+                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/M_JJDgOkgtU/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/M_JJDgOkgtU/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/M_JJDgOkgtU/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/M_JJDgOkgtU/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -714,6 +714,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "cb7kPXB4bL8",
                 "M_JJDgOkgtU",
                 "4kotTkkkxxg",
                 "JdARAeOyH7I",
@@ -2423,7 +2424,8 @@
                 "zYZnSExGfk0",
                 "JdARAeOyH7I",
                 "4kotTkkkxxg",
-                "M_JJDgOkgtU"
+                "M_JJDgOkgtU",
+                "cb7kPXB4bL8"
             ]
         },
         {
