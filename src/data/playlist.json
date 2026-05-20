@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1779174795375,
+    "updatedAt": 1779261258191,
     "count": 23,
     "playlists": [
         {
@@ -686,27 +686,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/default.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/cb7kPXB4bL8/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -714,6 +714,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "Xi3rBLCcHm8",
                 "cb7kPXB4bL8",
                 "M_JJDgOkgtU",
                 "4kotTkkkxxg",
@@ -725,7 +726,6 @@
                 "GPyC5PDaUdQ",
                 "6VkvtTT0Rg4",
                 "QbYcIEYEqvM",
-                "Un1yuFMT7as",
                 "shV9VxBlczQ",
                 "GwfFvR8gSvs",
                 "aKhkCjx-fLE",
@@ -1880,27 +1880,27 @@
             "description": "We take action to feature and empower talented underrepresented women!\nA berta.berlin playlist.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/4kotTkkkxxg/default.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/4kotTkkkxxg/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/4kotTkkkxxg/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/4kotTkkkxxg/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/4kotTkkkxxg/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/Xi3rBLCcHm8/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -1908,6 +1908,7 @@
             "publishedAt": "2020-08-21T11:59:25.182599Z",
             "isPrivate": false,
             "videoIds": [
+                "Xi3rBLCcHm8",
                 "4kotTkkkxxg",
                 "MteUxt0RxCM",
                 "aKhkCjx-fLE",
@@ -2053,8 +2054,7 @@
                 "16ITvDqJTc0",
                 "jSAGzCo8_zQ",
                 "Rmyhp7S7gfY",
-                "3CP_QO0oES8",
-                "Un1yuFMT7as"
+                "3CP_QO0oES8"
             ]
         },
         {
@@ -2415,7 +2415,6 @@
                 "aKhkCjx-fLE",
                 "GwfFvR8gSvs",
                 "shV9VxBlczQ",
-                "Un1yuFMT7as",
                 "QbYcIEYEqvM",
                 "6VkvtTT0Rg4",
                 "GPyC5PDaUdQ",
@@ -2425,7 +2424,8 @@
                 "JdARAeOyH7I",
                 "4kotTkkkxxg",
                 "M_JJDgOkgtU",
-                "cb7kPXB4bL8"
+                "cb7kPXB4bL8",
+                "Xi3rBLCcHm8"
             ]
         },
         {
