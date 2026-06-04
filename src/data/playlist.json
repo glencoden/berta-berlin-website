@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1780472536992,
+    "updatedAt": 1780558729894,
     "count": 23,
     "playlists": [
         {
@@ -688,27 +688,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/default.jpg",
+                    "url": "https://i.ytimg.com/vi/3Cbv7Q-Tcn0/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/3Cbv7Q-Tcn0/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/3Cbv7Q-Tcn0/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/3Cbv7Q-Tcn0/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/3Cbv7Q-Tcn0/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -716,6 +716,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "3Cbv7Q-Tcn0",
                 "STRJexLA3VE",
                 "Xi3rBLCcHm8",
                 "cb7kPXB4bL8",
@@ -2429,7 +2430,8 @@
                 "4kotTkkkxxg",
                 "M_JJDgOkgtU",
                 "cb7kPXB4bL8",
-                "Xi3rBLCcHm8"
+                "Xi3rBLCcHm8",
+                "3Cbv7Q-Tcn0"
             ]
         },
         {
