@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1780904539558,
+    "updatedAt": 1780989292248,
     "count": 23,
     "playlists": [
         {
@@ -1430,27 +1430,27 @@
             "description": "Highly energetic and powerful. This says it all.\nA berta.berlin playlist.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/default.jpg",
+                    "url": "https://i.ytimg.com/vi/G0THDI_ZuMU/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/G0THDI_ZuMU/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/G0THDI_ZuMU/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/G0THDI_ZuMU/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/JdARAeOyH7I/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/G0THDI_ZuMU/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -1458,36 +1458,37 @@
             "publishedAt": "2020-08-22T13:37:16.906183Z",
             "isPrivate": false,
             "videoIds": [
-                "JdARAeOyH7I",
-                "PzBklXoH9X0",
-                "NTv5ZtZdWtw",
-                "TBodMupah5g",
                 "G0THDI_ZuMU",
+                "PzBklXoH9X0",
+                "TBodMupah5g",
+                "1iUuFXKIeNQ",
+                "dHcy9NVWcbM",
+                "NTv5ZtZdWtw",
+                "JdARAeOyH7I",
                 "orgHHraNPu8",
                 "8jrgOOlai4w",
-                "dHcy9NVWcbM",
                 "0-GbaRBtELw",
                 "NhCw_yMs-IA",
                 "8euMZuJ4Owc",
+                "oIJR6RqMr9I",
+                "OtsAI77TH20",
                 "dX8WeFaZ30Q",
                 "IVMsgT9Hq0s",
                 "sapJ6H4Qvik",
-                "oIJR6RqMr9I",
-                "1iUuFXKIeNQ",
                 "5LiDkXrDmkM",
                 "JNryK_6ZSuw",
                 "SpWrdX1uiEc",
                 "TnAS4gwZzLU",
                 "P8meOTDBrXk",
+                "74L6NsK1Cto",
                 "8IZmhb4v2e8",
-                "OtsAI77TH20",
                 "rc0ldbcyDqY",
                 "bQl2YsczScw",
                 "oev4Yz2582s",
                 "tyrcg741mlY",
                 "33RXkIk_ZDE",
+                "qdz8BpOcBPs",
                 "W2wITKghZKM",
-                "74L6NsK1Cto",
                 "_c8I5WTeVWU",
                 "oYv3x5rcqu8",
                 "_fP5oyUmziQ",
@@ -1508,7 +1509,6 @@
                 "NPN9QJ3Lm4I",
                 "gYGzsBOG3_Y",
                 "MNZgLmn_KrA",
-                "qdz8BpOcBPs",
                 "0aXyScNg06Y"
             ]
         },
