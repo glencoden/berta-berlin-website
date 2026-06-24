@@ -41,31 +41,23 @@ function parseISO8601Duration(duration: string): number {
     return hours * 3600 + minutes * 60 + seconds;
 }
 
+async function getUploadsPlaylistId(): Promise<string> {
+    const res = await youtube.channels.list({
+        part: ['contentDetails'],
+        id: [YOUTUBE_CHANNEL_ID],
+    });
+
+    const uploadsId = res.data.items?.[0]?.contentDetails?.relatedPlaylists?.uploads;
+    if (!uploadsId) {
+        throw new Error(`Could not resolve uploads playlist for channel ${YOUTUBE_CHANNEL_ID}`);
+    }
+
+    return uploadsId;
+}
+
 async function searchAllVideos(): Promise<string[]> {
-    const ids: string[] = [];
-    let pageToken: string | undefined;
-
-    do {
-        console.log(`Fetching video search page... (${ids.length} IDs so far)`);
-        const res = await youtube.search.list({
-            part: ['snippet'],
-            channelId: YOUTUBE_CHANNEL_ID,
-            maxResults: GOOGLE_API_MAX_RESULTS,
-            order: 'date',
-            type: ['video'],
-            pageToken,
-        });
-
-        const items = res.data.items ?? [];
-        for (const item of items) {
-            if (item.id?.videoId) {
-                ids.push(item.id.videoId);
-            }
-        }
-
-        pageToken = res.data.nextPageToken ?? undefined;
-    } while (pageToken);
-
+    const uploadsPlaylistId = await getUploadsPlaylistId();
+    const ids = await getPlaylistVideoIds(uploadsPlaylistId);
     return ids;
 }
 
