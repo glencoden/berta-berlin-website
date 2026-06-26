@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1782371534476,
+    "updatedAt": 1782458326532,
     "count": 23,
     "playlists": [
         {
@@ -689,27 +689,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/OCFOqLvOrKY/default.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/OCFOqLvOrKY/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/OCFOqLvOrKY/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/OCFOqLvOrKY/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/OCFOqLvOrKY/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -717,6 +717,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "p9FvfhB857o",
                 "OCFOqLvOrKY",
                 "wYOOK2CaXdE",
                 "3Cbv7Q-Tcn0",
@@ -1888,27 +1889,27 @@
             "description": "We take action to feature and empower talented underrepresented women!\nA berta.berlin playlist.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/default.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/p9FvfhB857o/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -1916,6 +1917,7 @@
             "publishedAt": "2020-08-21T11:59:25.182599Z",
             "isPrivate": false,
             "videoIds": [
+                "p9FvfhB857o",
                 "STRJexLA3VE",
                 "Xi3rBLCcHm8",
                 "4kotTkkkxxg",
@@ -2437,7 +2439,8 @@
                 "Xi3rBLCcHm8",
                 "3Cbv7Q-Tcn0",
                 "wYOOK2CaXdE",
-                "OCFOqLvOrKY"
+                "OCFOqLvOrKY",
+                "p9FvfhB857o"
             ]
         },
         {
