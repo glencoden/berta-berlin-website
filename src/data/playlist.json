@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1783332467623,
+    "updatedAt": 1783416746113,
     "count": 23,
     "playlists": [
         {
@@ -691,27 +691,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/default.jpg",
+                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -719,6 +719,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "LvWXhswylsU",
                 "NDSMe1R_B4A",
                 "p9FvfhB857o",
                 "OCFOqLvOrKY",
@@ -1593,7 +1594,8 @@
                 "NhCw_yMs-IA",
                 "ipm3-o86fjE",
                 "GwfFvR8gSvs",
-                "4kotTkkkxxg"
+                "4kotTkkkxxg",
+                "LvWXhswylsU"
             ]
         },
         {
@@ -2445,7 +2447,8 @@
                 "wYOOK2CaXdE",
                 "OCFOqLvOrKY",
                 "p9FvfhB857o",
-                "NDSMe1R_B4A"
+                "NDSMe1R_B4A",
+                "LvWXhswylsU"
             ]
         },
         {
