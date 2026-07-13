@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1783843702535,
+    "updatedAt": 1783933117458,
     "count": 23,
     "playlists": [
         {
@@ -692,27 +692,27 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/default.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/LvWXhswylsU/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -1897,27 +1897,27 @@
             "description": "We take action to feature and empower talented underrepresented women!\nA berta.berlin playlist.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/default.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/NDSMe1R_B4A/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/YAYyOlXlWWM/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 }
@@ -1925,6 +1925,7 @@
             "publishedAt": "2020-08-21T11:59:25.182599Z",
             "isPrivate": false,
             "videoIds": [
+                "YAYyOlXlWWM",
                 "NDSMe1R_B4A",
                 "p9FvfhB857o",
                 "STRJexLA3VE",
@@ -2074,8 +2075,7 @@
                 "16ITvDqJTc0",
                 "jSAGzCo8_zQ",
                 "Rmyhp7S7gfY",
-                "3CP_QO0oES8",
-                "YAYyOlXlWWM"
+                "3CP_QO0oES8"
             ]
         },
         {
