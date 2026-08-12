@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1786431451386,
+    "updatedAt": 1786518999651,
     "count": 101,
     "videos": [
         {
@@ -72,12 +72,12 @@
             ],
             "duration": 1682,
             "statistics": {
-                "viewCount": "3054",
+                "viewCount": "3056",
                 "likeCount": "56",
                 "commentCount": "6",
                 "favoriteCount": "0",
-                "popularity": 3266.582264159586,
-                "trend": 999,
+                "popularity": 3268.0356761789917,
+                "trend": 1000,
                 "gain": 0
             }
         },
@@ -124,7 +124,7 @@
                 "likeCount": "39",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 4284.016219682569,
+                "popularity": 4284.053417338941,
                 "trend": 999,
                 "gain": 2
             }
@@ -174,7 +174,7 @@
                 "likeCount": "1",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 67.05682614570689,
+                "popularity": 67.0577799317677,
                 "trend": 1000,
                 "gain": 0
             }
@@ -224,7 +224,7 @@
                 "likeCount": "1",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 80.35682614570689,
+                "popularity": 80.35777993176771,
                 "trend": 994,
                 "gain": 0
             }
@@ -275,9 +275,9 @@
                 "likeCount": "2",
                 "commentCount": "1",
                 "favoriteCount": "0",
-                "popularity": 209.71365229141375,
-                "trend": 995,
-                "gain": 13
+                "popularity": 209.7155598635354,
+                "trend": 991,
+                "gain": 10
             }
         },
         {
@@ -336,12 +336,12 @@
             ],
             "duration": 306,
             "statistics": {
-                "viewCount": "16827",
+                "viewCount": "16833",
                 "likeCount": "275",
                 "commentCount": "27",
                 "favoriteCount": "0",
-                "popularity": 17322.027190069395,
-                "trend": 1003,
+                "popularity": 17326.489481236116,
+                "trend": 1002,
                 "gain": 7
             }
         },
@@ -395,7 +395,7 @@
                 "likeCount": "63",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 4377.180047179534,
+                "popularity": 4377.240135701365,
                 "trend": 1000,
                 "gain": 0
             }
@@ -448,7 +448,7 @@
                 "likeCount": "8",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 599.4546091656551,
+                "popularity": 599.4622394541416,
                 "trend": 999,
                 "gain": 0
             }
@@ -492,11 +492,11 @@
             ],
             "duration": 205,
             "statistics": {
-                "viewCount": "8160",
+                "viewCount": "8162",
                 "likeCount": "112",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 7969.564528319172,
+                "popularity": 7971.071352357983,
                 "trend": 993,
                 "gain": 6
             }
@@ -540,7 +540,7 @@
                 "likeCount": "28",
                 "commentCount": "3",
                 "favoriteCount": "0",
-                "popularity": 2098.791132079793,
+                "popularity": 2098.8178380894956,
                 "trend": 999,
                 "gain": 0
             }
@@ -592,9 +592,9 @@
                 "likeCount": "24",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 2362.563827496965,
-                "trend": 1000,
-                "gain": 1
+                "popularity": 2362.586718362425,
+                "trend": 999,
+                "gain": 0
             }
         },
         {
@@ -645,7 +645,7 @@
                 "likeCount": "24",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1978.2638274969654,
+                "popularity": 1978.2867183624248,
                 "trend": 1012,
                 "gain": 15
             }
@@ -695,12 +695,12 @@
             ],
             "duration": 568,
             "statistics": {
-                "viewCount": "7331",
+                "viewCount": "7337",
                 "likeCount": "162",
                 "commentCount": "17",
                 "favoriteCount": "0",
-                "popularity": 8397.105835604516,
-                "trend": 998,
+                "popularity": 8401.460348946368,
+                "trend": 999,
                 "gain": 1
             }
         },
@@ -739,12 +739,12 @@
             "tags": [],
             "duration": 3787,
             "statistics": {
-                "viewCount": "122657",
+                "viewCount": "122666",
                 "likeCount": "2870",
                 "commentCount": "97",
                 "favoriteCount": "0",
-                "popularity": 143709.99103817876,
-                "trend": 1000,
+                "popularity": 143719.02840417332,
+                "trend": 999,
                 "gain": 1
             }
         },
@@ -803,12 +803,12 @@
             ],
             "duration": 258,
             "statistics": {
-                "viewCount": "43125",
+                "viewCount": "43132",
                 "likeCount": "1088",
                 "commentCount": "100",
                 "favoriteCount": "0",
-                "popularity": 52118.12684652909,
-                "trend": 1001,
+                "popularity": 52124.064565763256,
+                "trend": 1000,
                 "gain": 3
             }
         },
@@ -867,13 +867,13 @@
             ],
             "duration": 176,
             "statistics": {
-                "viewCount": "288388",
-                "likeCount": "9234",
+                "viewCount": "288472",
+                "likeCount": "9238",
                 "commentCount": "139",
                 "favoriteCount": "0",
-                "popularity": 387999.7326294574,
+                "popularity": 388147.97100967006,
                 "trend": 1001,
-                "gain": 2
+                "gain": 3
             }
         },
         {
@@ -919,7 +919,7 @@
                 "likeCount": "12",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1188.2819137484826,
+                "popularity": 1188.2933591812125,
                 "trend": 1000,
                 "gain": 0
             }
@@ -967,7 +967,7 @@
                 "likeCount": "5",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 415.7841307285345,
+                "popularity": 415.78889965883855,
                 "trend": 998,
                 "gain": 0
             }
@@ -1021,7 +1021,7 @@
                 "likeCount": "481",
                 "commentCount": "80",
                 "favoriteCount": "0",
-                "popularity": 15310.833376085013,
+                "popularity": 15311.292147180266,
                 "trend": 1000,
                 "gain": 0
             }
@@ -1086,11 +1086,11 @@
             ],
             "duration": 300,
             "statistics": {
-                "viewCount": "26135",
+                "viewCount": "26136",
                 "likeCount": "406",
                 "commentCount": "19",
                 "favoriteCount": "0",
-                "popularity": 26478.171415156998,
+                "popularity": 26479.258652297685,
                 "trend": 999,
                 "gain": 0
             }
@@ -1137,11 +1137,11 @@
             ],
             "duration": 251,
             "statistics": {
-                "viewCount": "38353",
+                "viewCount": "38366",
                 "likeCount": "484",
                 "commentCount": "5",
                 "favoriteCount": "0",
-                "popularity": 36603.00385452213,
+                "popularity": 36612.56548697557,
                 "trend": 997,
                 "gain": 2
             }
@@ -1191,7 +1191,7 @@
                 "likeCount": "16",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 820.2092183313102,
+                "popularity": 820.2244789082833,
                 "trend": 990,
                 "gain": 2
             }
@@ -1238,7 +1238,7 @@
                 "likeCount": "26",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1434.0774797883792,
+                "popularity": 1434.1022782259602,
                 "trend": 999,
                 "gain": 0
             }
@@ -1286,7 +1286,7 @@
                 "likeCount": "4",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 441.82730458282754,
+                "popularity": 441.8311197270708,
                 "trend": 1000,
                 "gain": 0
             }
@@ -1319,11 +1319,11 @@
             ],
             "duration": 1411,
             "statistics": {
-                "viewCount": "70127",
+                "viewCount": "70145",
                 "likeCount": "1917",
                 "commentCount": "56",
                 "favoriteCount": "0",
-                "popularity": 87729.5357213201,
+                "popularity": 87743.96412919869,
                 "trend": 999,
                 "gain": 2
             }
@@ -1367,7 +1367,7 @@
                 "likeCount": "20",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 14398.936522914137,
+                "popularity": 14398.955598635353,
                 "trend": 999,
                 "gain": 0
             }
@@ -1411,7 +1411,7 @@
                 "likeCount": "10",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 12919.168261457067,
+                "popularity": 12919.177799317675,
                 "trend": 999,
                 "gain": 0
             }
@@ -1451,11 +1451,11 @@
             "tags": [],
             "duration": 2613,
             "statistics": {
-                "viewCount": "17312",
+                "viewCount": "17313",
                 "likeCount": "13",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 12380.438739894189,
+                "popularity": 12381.151139112979,
                 "trend": 999,
                 "gain": 0
             }
@@ -1499,7 +1499,7 @@
                 "likeCount": "15",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 11809.652392185602,
+                "popularity": 11809.666698976514,
                 "trend": 999,
                 "gain": 0
             }
@@ -1564,11 +1564,11 @@
             ],
             "duration": 2842,
             "statistics": {
-                "viewCount": "1799",
+                "viewCount": "1800",
                 "likeCount": "25",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1763.2206536426722,
+                "popularity": 1763.9444982941927,
                 "trend": 999,
                 "gain": 0
             }
@@ -1638,11 +1638,11 @@
             ],
             "duration": 2261,
             "statistics": {
-                "viewCount": "3176",
+                "viewCount": "3177",
                 "likeCount": "36",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 2948.8457412454477,
+                "popularity": 2949.580077543637,
                 "trend": 999,
                 "gain": 0
             }
@@ -1717,13 +1717,13 @@
             ],
             "duration": 2012,
             "statistics": {
-                "viewCount": "492",
+                "viewCount": "497",
                 "likeCount": "7",
                 "commentCount": "1",
                 "favoriteCount": "0",
-                "popularity": 485.4977830199482,
-                "trend": 1000,
-                "gain": 1
+                "popularity": 489.00445952237396,
+                "trend": 1008,
+                "gain": 8
             }
         },
         {
@@ -1793,7 +1793,7 @@
                 "likeCount": "10",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 2228.7682614570685,
+                "popularity": 2228.777799317677,
                 "trend": 997,
                 "gain": 0
             }
@@ -1871,7 +1871,7 @@
                 "likeCount": "27",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 4770.834305934086,
+                "popularity": 4770.8600581577275,
                 "trend": 999,
                 "gain": 0
             }
@@ -1946,7 +1946,7 @@
                 "likeCount": "38",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 2918.459393536862,
+                "popularity": 2918.4956374071726,
                 "trend": 999,
                 "gain": 0
             }
@@ -2028,7 +2028,7 @@
                 "likeCount": "13",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1626.3387398941895,
+                "popularity": 1626.35113911298,
                 "trend": 1000,
                 "gain": 0
             }
@@ -2108,7 +2108,7 @@
                 "likeCount": "12",
                 "commentCount": "1",
                 "favoriteCount": "0",
-                "popularity": 2284.4819137484824,
+                "popularity": 2284.4933591812123,
                 "trend": 1000,
                 "gain": 0
             }
@@ -2183,7 +2183,7 @@
                 "likeCount": "7",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 300.69778301994825,
+                "popularity": 300.70445952237395,
                 "trend": 1000,
                 "gain": 0
             }
@@ -2227,7 +2227,7 @@
                 "likeCount": "13",
                 "commentCount": "1",
                 "favoriteCount": "0",
-                "popularity": 986.5387398941896,
+                "popularity": 986.5511391129802,
                 "trend": 1002,
                 "gain": 2
             }
@@ -2271,7 +2271,7 @@
                 "likeCount": "88",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 5547.500700822206,
+                "popularity": 5547.584633995558,
                 "trend": 1000,
                 "gain": 0
             }
@@ -2315,7 +2315,7 @@
                 "likeCount": "140",
                 "commentCount": "9",
                 "favoriteCount": "0",
-                "popularity": 10309.155660398965,
+                "popularity": 10309.289190447478,
                 "trend": 997,
                 "gain": 1
             }
@@ -2371,7 +2371,7 @@
                 "likeCount": "108",
                 "commentCount": "5",
                 "favoriteCount": "0",
-                "popularity": 4554.137223736344,
+                "popularity": 4554.240232630912,
                 "trend": 999,
                 "gain": 0
             }
@@ -2429,7 +2429,7 @@
                 "likeCount": "107",
                 "commentCount": "8",
                 "favoriteCount": "0",
-                "popularity": 7738.5803975906365,
+                "popularity": 7738.682452699144,
                 "trend": 999,
                 "gain": 0
             }
@@ -2487,12 +2487,12 @@
             ],
             "duration": 312,
             "statistics": {
-                "viewCount": "108835",
-                "likeCount": "1965",
+                "viewCount": "108856",
+                "likeCount": "1967",
                 "commentCount": "76",
                 "favoriteCount": "0",
-                "popularity": 115792.66337631404,
-                "trend": 999,
+                "popularity": 115849.55312578708,
+                "trend": 1000,
                 "gain": 2
             }
         },
@@ -2531,11 +2531,11 @@
             "tags": [],
             "duration": 205,
             "statistics": {
-                "viewCount": "13247",
+                "viewCount": "13248",
                 "likeCount": "303",
                 "commentCount": "12",
                 "favoriteCount": "0",
-                "popularity": 15380.418322149188,
+                "popularity": 15381.407319325612,
                 "trend": 1001,
                 "gain": 2
             }
@@ -2582,11 +2582,11 @@
             ],
             "duration": 262,
             "statistics": {
-                "viewCount": "72281",
+                "viewCount": "72296",
                 "likeCount": "1301",
                 "commentCount": "77",
                 "favoriteCount": "0",
-                "popularity": 76820.73081556466,
+                "popularity": 76832.47169122979,
                 "trend": 998,
                 "gain": 1
             }
@@ -2674,11 +2674,11 @@
             ],
             "duration": 398,
             "statistics": {
-                "viewCount": "63998",
+                "viewCount": "64013",
                 "likeCount": "1114",
                 "commentCount": "78",
                 "favoriteCount": "0",
-                "popularity": 67253.30432631748,
+                "popularity": 67264.86684398922,
                 "trend": 1000,
                 "gain": 1
             }
@@ -2730,11 +2730,11 @@
             ],
             "duration": 454,
             "statistics": {
-                "viewCount": "211728",
+                "viewCount": "211786",
                 "likeCount": "3313",
                 "commentCount": "146",
                 "favoriteCount": "0",
-                "popularity": 214989.1650207269,
+                "popularity": 215032.9249139464,
                 "trend": 1000,
                 "gain": 4
             }
@@ -2799,11 +2799,11 @@
             ],
             "duration": 826,
             "statistics": {
-                "viewCount": "175547",
-                "likeCount": "5121",
-                "commentCount": "242",
+                "viewCount": "175606",
+                "likeCount": "5122",
+                "commentCount": "243",
                 "favoriteCount": "0",
-                "popularity": 226106.00669216498,
+                "popularity": 226172.3488105142,
                 "trend": 1000,
                 "gain": 3
             }
@@ -2854,11 +2854,11 @@
             ],
             "duration": 877,
             "statistics": {
-                "viewCount": "15426",
+                "viewCount": "15428",
                 "likeCount": "144",
                 "commentCount": "19",
                 "favoriteCount": "0",
-                "popularity": 13700.78296498179,
+                "popularity": 13702.320310174548,
                 "trend": 999,
                 "gain": 1
             }
@@ -2903,11 +2903,11 @@
             ],
             "duration": 851,
             "statistics": {
-                "viewCount": "39830",
+                "viewCount": "39831",
                 "likeCount": "651",
                 "commentCount": "19",
                 "favoriteCount": "0",
-                "popularity": 41003.09382085518,
+                "popularity": 41004.41473558077,
                 "trend": 1001,
                 "gain": 1
             }
@@ -2962,9 +2962,9 @@
                 "likeCount": "34",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 4048.132088954034,
+                "popularity": 4048.1645176801017,
                 "trend": 1000,
-                "gain": 1
+                "gain": 0
             }
         },
         {
@@ -3011,7 +3011,7 @@
                 "likeCount": "147",
                 "commentCount": "10",
                 "favoriteCount": "0",
-                "popularity": 7158.853443418913,
+                "popularity": 7158.993649969852,
                 "trend": 999,
                 "gain": 0
             }
@@ -3051,12 +3051,12 @@
             "tags": [],
             "duration": 1589,
             "statistics": {
-                "viewCount": "11607",
+                "viewCount": "11609",
                 "likeCount": "122",
                 "commentCount": "4",
                 "favoriteCount": "0",
-                "popularity": 10584.03278977624,
-                "trend": 1000,
+                "popularity": 10585.54915167566,
+                "trend": 999,
                 "gain": 1
             }
         },
@@ -3118,11 +3118,11 @@
             ],
             "duration": 2348,
             "statistics": {
-                "viewCount": "101236",
-                "likeCount": "2462",
+                "viewCount": "101252",
+                "likeCount": "2463",
                 "commentCount": "112",
                 "favoriteCount": "0",
-                "popularity": 120491.30597073036,
+                "popularity": 120525.01197194385,
                 "trend": 1000,
                 "gain": 1
             }
@@ -3204,7 +3204,7 @@
                 "likeCount": "53",
                 "commentCount": "6",
                 "favoriteCount": "0",
-                "popularity": 4063.611785722465,
+                "popularity": 4063.662336383688,
                 "trend": 1000,
                 "gain": 0
             }
@@ -3255,9 +3255,9 @@
                 "likeCount": "55",
                 "commentCount": "5",
                 "favoriteCount": "0",
-                "popularity": 3887.625438013879,
+                "popularity": 3887.6778962472235,
                 "trend": 999,
-                "gain": -1
+                "gain": 0
             }
         },
         {
@@ -3300,11 +3300,11 @@
             ],
             "duration": 1055,
             "statistics": {
-                "viewCount": "64059",
+                "viewCount": "64060",
                 "likeCount": "1010",
                 "commentCount": "146",
                 "favoriteCount": "0",
-                "popularity": 65199.69440716396,
+                "popularity": 65201.35773108539,
                 "trend": 999,
                 "gain": -1
             }
@@ -3376,11 +3376,11 @@
             ],
             "duration": 204,
             "statistics": {
-                "viewCount": "20616",
+                "viewCount": "20619",
                 "likeCount": "400",
                 "commentCount": "15",
                 "favoriteCount": "0",
-                "popularity": 22493.930458282754,
+                "popularity": 22496.411972707083,
                 "trend": 999,
                 "gain": 1
             }
@@ -3449,11 +3449,11 @@
             ],
             "duration": 198,
             "statistics": {
-                "viewCount": "11918",
+                "viewCount": "11924",
                 "likeCount": "261",
                 "commentCount": "12",
                 "favoriteCount": "0",
-                "popularity": 13603.5316240295,
+                "popularity": 13607.98056219137,
                 "trend": 998,
                 "gain": 7
             }
@@ -3520,13 +3520,13 @@
             ],
             "duration": 1494,
             "statistics": {
-                "viewCount": "78865",
-                "likeCount": "2088",
+                "viewCount": "78884",
+                "likeCount": "2087",
                 "commentCount": "129",
                 "favoriteCount": "0",
-                "popularity": 97292.95299223598,
-                "trend": 1000,
-                "gain": 3
+                "popularity": 97288.0867175992,
+                "trend": 999,
+                "gain": 2
             }
         },
         {
@@ -3588,7 +3588,7 @@
                 "likeCount": "16",
                 "commentCount": "3",
                 "favoriteCount": "0",
-                "popularity": 1047.0092183313102,
+                "popularity": 1047.0244789082833,
                 "trend": 1000,
                 "gain": 0
             }
@@ -3655,7 +3655,7 @@
                 "likeCount": "47",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 2128.2708288482236,
+                "popularity": 2128.315656793082,
                 "trend": 1000,
                 "gain": 0
             }
@@ -3708,7 +3708,7 @@
                 "likeCount": "12",
                 "commentCount": "3",
                 "favoriteCount": "0",
-                "popularity": 378.3819137484827,
+                "popularity": 378.3933591812124,
                 "trend": 1000,
                 "gain": 0
             }
@@ -3752,7 +3752,7 @@
                 "likeCount": "1",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 66.35682614570689,
+                "popularity": 66.35777993176771,
                 "trend": 1000,
                 "gain": 0
             }
@@ -3806,7 +3806,7 @@
                 "likeCount": "5",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 235.18413072853443,
+                "popularity": 235.18889965883852,
                 "trend": 1000,
                 "gain": 0
             }
@@ -3862,7 +3862,7 @@
                 "likeCount": "6",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 176.24095687424133,
+                "popularity": 176.24667959060622,
                 "trend": 998,
                 "gain": 0
             }
@@ -3915,7 +3915,7 @@
                 "likeCount": "14",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 483.0955660398965,
+                "popularity": 483.1089190447479,
                 "trend": 999,
                 "gain": 0
             }
@@ -3959,7 +3959,7 @@
                 "likeCount": "14",
                 "commentCount": "4",
                 "favoriteCount": "0",
-                "popularity": 462.0955660398965,
+                "popularity": 462.1089190447479,
                 "trend": 1000,
                 "gain": 0
             }
@@ -4012,7 +4012,7 @@
                 "likeCount": "3",
                 "commentCount": "1",
                 "favoriteCount": "0",
-                "popularity": 157.77047843712066,
+                "popularity": 157.77333979530312,
                 "trend": 1000,
                 "gain": 0
             }
@@ -4060,7 +4060,7 @@
                 "likeCount": "14",
                 "commentCount": "5",
                 "favoriteCount": "0",
-                "popularity": 1058.4955660398964,
+                "popularity": 1058.508919044748,
                 "trend": 1000,
                 "gain": 0
             }
@@ -4104,7 +4104,7 @@
                 "likeCount": "3",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 95.47047843712068,
+                "popularity": 95.4733397953031,
                 "trend": 1000,
                 "gain": 0
             }
@@ -4156,7 +4156,7 @@
                 "likeCount": "9",
                 "commentCount": "1",
                 "favoriteCount": "0",
-                "popularity": 414.511435311362,
+                "popularity": 414.52001938590934,
                 "trend": 999,
                 "gain": 0
             }
@@ -4191,13 +4191,13 @@
             "tags": [],
             "duration": 284,
             "statistics": {
-                "viewCount": "1339",
+                "viewCount": "1340",
                 "likeCount": "23",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 1400.9070013512585,
+                "popularity": 1401.6289384306572,
                 "trend": 1001,
-                "gain": 1
+                "gain": 2
             }
         },
         {
@@ -4266,7 +4266,7 @@
                 "likeCount": "74",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 3020.4051347823097,
+                "popularity": 3020.4757149508105,
                 "trend": 1001,
                 "gain": 1
             }
@@ -4306,11 +4306,11 @@
             "tags": [],
             "duration": 352,
             "statistics": {
-                "viewCount": "8880",
+                "viewCount": "8881",
                 "likeCount": "144",
                 "commentCount": "5",
                 "favoriteCount": "0",
-                "popularity": 9118.582964981792,
+                "popularity": 9119.42031017455,
                 "trend": 998,
                 "gain": 0
             }
@@ -4382,12 +4382,12 @@
             ],
             "duration": 343,
             "statistics": {
-                "viewCount": "10894",
+                "viewCount": "10897",
                 "likeCount": "142",
                 "commentCount": "6",
                 "favoriteCount": "0",
-                "popularity": 10488.069312690379,
-                "trend": 997,
+                "popularity": 10490.304750311014,
+                "trend": 996,
                 "gain": 1
             }
         },
@@ -4426,11 +4426,11 @@
             "tags": [],
             "duration": 327,
             "statistics": {
-                "viewCount": "8038",
+                "viewCount": "8047",
                 "likeCount": "186",
                 "commentCount": "11",
                 "favoriteCount": "0",
-                "popularity": 9375.76966310148,
+                "popularity": 9382.247067308792,
                 "trend": 997,
                 "gain": 4
             }
@@ -4502,11 +4502,11 @@
             ],
             "duration": 313,
             "statistics": {
-                "viewCount": "9548",
+                "viewCount": "9549",
                 "likeCount": "126",
                 "commentCount": "5",
                 "favoriteCount": "0",
-                "popularity": 9223.360094359068,
+                "popularity": 9224.180271402729,
                 "trend": 999,
                 "gain": 0
             }
@@ -4580,7 +4580,7 @@
                 "likeCount": "329",
                 "commentCount": "12",
                 "favoriteCount": "0",
-                "popularity": 15343.795801937566,
+                "popularity": 15344.109597551575,
                 "trend": 997,
                 "gain": -1
             }
@@ -4647,11 +4647,11 @@
             ],
             "duration": 1633,
             "statistics": {
-                "viewCount": "3949",
+                "viewCount": "3950",
                 "likeCount": "134",
                 "commentCount": "1",
                 "favoriteCount": "0",
-                "popularity": 5465.314703524723,
+                "popularity": 5466.142510856873,
                 "trend": 1002,
                 "gain": 2
             }
@@ -4727,7 +4727,7 @@
                 "likeCount": "78",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 2856.032439365137,
+                "popularity": 2856.106834677881,
                 "trend": 1000,
                 "gain": 0
             }
@@ -4803,7 +4803,7 @@
                 "likeCount": "83",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 2431.8165700936715,
+                "popularity": 2431.895734336719,
                 "trend": 1000,
                 "gain": 0
             }
@@ -4859,7 +4859,7 @@
                 "likeCount": "104",
                 "commentCount": "4",
                 "favoriteCount": "0",
-                "popularity": 4222.209919153516,
+                "popularity": 4222.309112903842,
                 "trend": 999,
                 "gain": 0
             }
@@ -4933,7 +4933,7 @@
                 "likeCount": "27",
                 "commentCount": "3",
                 "favoriteCount": "0",
-                "popularity": 1763.634305934086,
+                "popularity": 1763.660058157728,
                 "trend": 1002,
                 "gain": 4
             }
@@ -4973,12 +4973,12 @@
             "tags": [],
             "duration": 270,
             "statistics": {
-                "viewCount": "5368",
+                "viewCount": "5369",
                 "likeCount": "58",
                 "commentCount": "8",
                 "favoriteCount": "0",
-                "popularity": 4926.695916450999,
-                "trend": 1000,
+                "popularity": 4927.451236042527,
+                "trend": 999,
                 "gain": 0
             }
         },
@@ -5021,7 +5021,7 @@
                 "likeCount": "10",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 2599.7682614570685,
+                "popularity": 2599.777799317677,
                 "trend": 1000,
                 "gain": 0
             }
@@ -5065,7 +5065,7 @@
                 "likeCount": "17",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1473.166044477017,
+                "popularity": 1473.182258840051,
                 "trend": 1000,
                 "gain": 0
             }
@@ -5109,7 +5109,7 @@
                 "likeCount": "21",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1347.9933490598446,
+                "popularity": 1348.013378567122,
                 "trend": 999,
                 "gain": 0
             }
@@ -5153,7 +5153,7 @@
                 "likeCount": "13",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 2230.4387398941894,
+                "popularity": 2230.45113911298,
                 "trend": 1000,
                 "gain": 0
             }
@@ -5197,7 +5197,7 @@
                 "likeCount": "17",
                 "commentCount": "0",
                 "favoriteCount": "0",
-                "popularity": 1383.566044477017,
+                "popularity": 1383.5822588400508,
                 "trend": 999,
                 "gain": 0
             }
@@ -5241,11 +5241,11 @@
             ],
             "duration": 444,
             "statistics": {
-                "viewCount": "20875",
+                "viewCount": "20881",
                 "likeCount": "1078",
                 "commentCount": "33",
                 "favoriteCount": "0",
-                "popularity": 36341.55858507202,
+                "popularity": 36346.786766445584,
                 "trend": 997,
                 "gain": 4
             }
@@ -5301,7 +5301,7 @@
                 "likeCount": "41",
                 "commentCount": "3",
                 "favoriteCount": "0",
-                "popularity": 2226.4298719739827,
+                "popularity": 2226.468977202476,
                 "trend": 995,
                 "gain": 0
             }
@@ -5341,11 +5341,11 @@
             "tags": [],
             "duration": 386,
             "statistics": {
-                "viewCount": "6704756",
-                "likeCount": "85563",
-                "commentCount": "5916",
+                "viewCount": "6707006",
+                "likeCount": "85590",
+                "commentCount": "5917",
                 "favoriteCount": "0",
-                "popularity": 6418007.715505118,
+                "popularity": 6420208.584359997,
                 "trend": 999,
                 "gain": 5
             }
@@ -5385,13 +5385,13 @@
             "tags": [],
             "duration": 5352,
             "statistics": {
-                "viewCount": "158860",
+                "viewCount": "158899",
                 "likeCount": "2799",
                 "commentCount": "145",
                 "favoriteCount": "0",
-                "popularity": 167620.9563818336,
+                "popularity": 167650.92602901778,
                 "trend": 999,
-                "gain": 3
+                "gain": 2
             }
         },
         {
@@ -5431,11 +5431,11 @@
             ],
             "duration": 6343,
             "statistics": {
-                "viewCount": "16101",
+                "viewCount": "16105",
                 "likeCount": "274",
                 "commentCount": "34",
                 "favoriteCount": "0",
-                "popularity": 16793.670363923688,
+                "popularity": 16796.73170130435,
                 "trend": 999,
                 "gain": 3
             }
@@ -5479,7 +5479,7 @@
                 "likeCount": "28",
                 "commentCount": "3",
                 "favoriteCount": "0",
-                "popularity": 1970.691132079793,
+                "popularity": 1970.7178380894957,
                 "trend": 999,
                 "gain": 0
             }
@@ -5523,7 +5523,7 @@
                 "likeCount": "19",
                 "commentCount": "7",
                 "favoriteCount": "0",
-                "popularity": 959.7796967684309,
+                "popularity": 959.7978187035864,
                 "trend": 1003,
                 "gain": 5
             }
@@ -5594,7 +5594,7 @@
                 "likeCount": "50",
                 "commentCount": "2",
                 "favoriteCount": "0",
-                "popularity": 2174.741307285344,
+                "popularity": 2174.788996588385,
                 "trend": 999,
                 "gain": 0
             }
@@ -5652,12 +5652,12 @@
             ],
             "duration": 683,
             "statistics": {
-                "viewCount": "20390",
+                "viewCount": "20400",
                 "likeCount": "836",
                 "commentCount": "29",
                 "favoriteCount": "0",
-                "popularity": 31124.10665781096,
-                "trend": 997,
+                "popularity": 31131.904022957802,
+                "trend": 998,
                 "gain": 8
             }
         }
