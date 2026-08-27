@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1787726302412,
+    "updatedAt": 1787850866224,
     "count": 23,
     "playlists": [
         {
@@ -76,6 +76,11 @@
                     "url": "https://i.ytimg.com/vi/STRJexLA3VE/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
+                },
+                "fhd": {
+                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/fhddefault.jpg",
+                    "width": 1920,
+                    "height": 1080
                 }
             },
             "publishedAt": "2024-11-13T10:11:29.596344Z",
@@ -717,6 +722,11 @@
                     "url": "https://i.ytimg.com/vi/AHQJ3ANCRAM/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
+                },
+                "fhd": {
+                    "url": "https://i.ytimg.com/vi/AHQJ3ANCRAM/fhddefault.jpg",
+                    "width": 1920,
+                    "height": 1080
                 }
             },
             "publishedAt": "2021-02-22T10:19:56.926499Z",
@@ -1688,6 +1698,11 @@
                     "url": "https://i.ytimg.com/vi/kg3FhoEObW8/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
+                },
+                "fhd": {
+                    "url": "https://i.ytimg.com/vi/kg3FhoEObW8/fhddefault.jpg",
+                    "width": 1920,
+                    "height": 1080
                 }
             },
             "publishedAt": "2020-08-21T12:26:00.73156Z",
@@ -1935,6 +1950,11 @@
                     "url": "https://i.ytimg.com/vi/AHQJ3ANCRAM/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
+                },
+                "fhd": {
+                    "url": "https://i.ytimg.com/vi/AHQJ3ANCRAM/fhddefault.jpg",
+                    "width": 1920,
+                    "height": 1080
                 }
             },
             "publishedAt": "2020-08-21T11:59:25.182599Z",
