@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1789469604448,
+    "updatedAt": 1789555378787,
     "count": 23,
     "playlists": [
         {
@@ -702,32 +702,32 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/8ViJETh9CeU/default.jpg",
+                    "url": "https://i.ytimg.com/vi/CWKEhsV84_c/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/8ViJETh9CeU/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/CWKEhsV84_c/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/8ViJETh9CeU/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/CWKEhsV84_c/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/8ViJETh9CeU/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/CWKEhsV84_c/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/8ViJETh9CeU/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/CWKEhsV84_c/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 },
                 "fhd": {
-                    "url": "https://i.ytimg.com/vi/8ViJETh9CeU/fhddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/CWKEhsV84_c/fhddefault.jpg",
                     "width": 1920,
                     "height": 1080
                 }
@@ -735,6 +735,7 @@
             "publishedAt": "2021-02-22T10:19:56.926499Z",
             "isPrivate": false,
             "videoIds": [
+                "CWKEhsV84_c",
                 "8ViJETh9CeU",
                 "wm0h3D4giYE",
                 "Jxwun8pIS_U",
@@ -1416,7 +1417,8 @@
                 "SFzEvMhXBsw",
                 "DJr_tTNHA3Q",
                 "MteUxt0RxCM",
-                "8ViJETh9CeU"
+                "8ViJETh9CeU",
+                "CWKEhsV84_c"
             ]
         },
         {
@@ -1627,7 +1629,8 @@
                 "4kotTkkkxxg",
                 "LvWXhswylsU",
                 "HzgIKKHRxdE",
-                "AHQJ3ANCRAM"
+                "AHQJ3ANCRAM",
+                "CWKEhsV84_c"
             ]
         },
         {
