@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1790333950293,
+    "updatedAt": 1790419256444,
     "count": 23,
     "playlists": [
         {
@@ -273,34 +273,40 @@
             "description": "As part of the close partnership with Jazzexzess berta.berlin also documented the well renowned Jazzwerkstatt Peitz Festival in 2021 with its one of a kind line-up of international artist from the Jazz and Impro-scene and a history of over 60 years.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/DNstrfMVbCs/default.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/DNstrfMVbCs/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/DNstrfMVbCs/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/DNstrfMVbCs/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/DNstrfMVbCs/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
+                },
+                "fhd": {
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/fhddefault.jpg",
+                    "width": 1920,
+                    "height": 1080
                 }
             },
             "publishedAt": "2021-12-29T07:46:34.723599Z",
             "isPrivate": false,
             "videoIds": [
+                "V6eLhD1gn2Y",
                 "DNstrfMVbCs",
                 "4mm8NrFSgc8",
                 "DfZpfNPTkW8",
@@ -327,8 +333,7 @@
                 "KLHiWqeYExU",
                 "YQf_fOMeAcU",
                 "4pwKDk_EbWQ",
-                "n1V97ZI0yWA",
-                "V6eLhD1gn2Y"
+                "n1V97ZI0yWA"
             ]
         },
         {
@@ -703,32 +708,32 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/epHyOpfSps8/default.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/epHyOpfSps8/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/epHyOpfSps8/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/epHyOpfSps8/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/epHyOpfSps8/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 },
                 "fhd": {
-                    "url": "https://i.ytimg.com/vi/epHyOpfSps8/fhddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/fhddefault.jpg",
                     "width": 1920,
                     "height": 1080
                 }
