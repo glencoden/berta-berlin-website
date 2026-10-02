@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1790857015792,
+    "updatedAt": 1790941560560,
     "count": 23,
     "playlists": [
         {
@@ -53,32 +53,32 @@
             "description": "Showing a selection of some of the great concerts happening at Cologne Jazzweek.\nA berta.berlin playlist.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/default.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 },
                 "fhd": {
-                    "url": "https://i.ytimg.com/vi/STRJexLA3VE/fhddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/fhddefault.jpg",
                     "width": 1920,
                     "height": 1080
                 }
@@ -86,6 +86,7 @@
             "publishedAt": "2024-11-13T10:11:29.596344Z",
             "isPrivate": false,
             "videoIds": [
+                "ZGDmnm8XlgA",
                 "STRJexLA3VE",
                 "HzKIgiteWP8",
                 "PX19N59LWpQ",
@@ -108,8 +109,7 @@
                 "8euMZuJ4Owc",
                 "tzfGXeGaJ5M",
                 "IVMsgT9Hq0s",
-                "sapJ6H4Qvik",
-                "ZGDmnm8XlgA"
+                "sapJ6H4Qvik"
             ]
         },
         {
@@ -709,32 +709,32 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/default.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 },
                 "fhd": {
-                    "url": "https://i.ytimg.com/vi/V6eLhD1gn2Y/fhddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/ZGDmnm8XlgA/fhddefault.jpg",
                     "width": 1920,
                     "height": 1080
                 }
