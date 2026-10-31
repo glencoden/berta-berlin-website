@@ -1,5 +1,5 @@
 {
-    "updatedAt": 1793361597263,
+    "updatedAt": 1793446545795,
     "count": 23,
     "playlists": [
         {
@@ -715,32 +715,32 @@
             "description": "All Uploads - Live is better | A celebration of live music appreciation.",
             "thumbnails": {
                 "default": {
-                    "url": "https://i.ytimg.com/vi/j7y84dOqr_o/default.jpg",
+                    "url": "https://i.ytimg.com/vi/IOF1qBT3_OY/default.jpg",
                     "width": 120,
                     "height": 90
                 },
                 "medium": {
-                    "url": "https://i.ytimg.com/vi/j7y84dOqr_o/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/IOF1qBT3_OY/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                 },
                 "high": {
-                    "url": "https://i.ytimg.com/vi/j7y84dOqr_o/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/IOF1qBT3_OY/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                 },
                 "standard": {
-                    "url": "https://i.ytimg.com/vi/j7y84dOqr_o/sddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/IOF1qBT3_OY/sddefault.jpg",
                     "width": 640,
                     "height": 480
                 },
                 "maxres": {
-                    "url": "https://i.ytimg.com/vi/j7y84dOqr_o/maxresdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/IOF1qBT3_OY/maxresdefault.jpg",
                     "width": 1280,
                     "height": 720
                 },
                 "fhd": {
-                    "url": "https://i.ytimg.com/vi/j7y84dOqr_o/fhddefault.jpg",
+                    "url": "https://i.ytimg.com/vi/IOF1qBT3_OY/fhddefault.jpg",
                     "width": 1920,
                     "height": 1080
                 }
